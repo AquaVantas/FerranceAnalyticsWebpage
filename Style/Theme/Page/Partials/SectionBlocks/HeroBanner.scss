@@ -1,0 +1,5 @@
+.HeroBanner {
+    @include media-breakpoint-up(lg) {
+        padding-top: 60px;
+    }
+}

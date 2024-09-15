@@ -1,7 +1,26 @@
 @import "mixings.scss";
 
+body {
+    background-color: $primary-main;
+}
+
+a {
+    font-family: Georgia;
+    color: $secondary-main;
+    text-decoration: none;
+    
+    &.btn {
+        padding: 12px 20px;
+        border-radius: 4px;
+    }
+}
+
+
 
 //Fixed styles
 @import "Page/Master/Footer.scss";
 @import "Page/Master/Navigation.scss";
 @import "Page/Master/Cookies.scss";
+
+//Sections styles
+@import "Page/Partials/SectionBlocks/HeroBanner.scss";

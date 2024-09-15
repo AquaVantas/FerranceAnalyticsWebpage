@@ -1,2 +1,32 @@
 .cookies {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    min-width: 350px;
+    height: auto;
+    
+    .image-and-title {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 20px;
+        }
+
+        h2 {
+
+        }
+    }
+
+    p {
+
+    }
+
+    .choice {
+        a {
+            &:first-child {
+                margin-right: 20px;
+            }
+        }
+    }
 }

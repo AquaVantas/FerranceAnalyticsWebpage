@@ -1,10 +1,60 @@
-@font-face {
-  font-family: "Montserrat-Regular";
-  src: url("../Content/Fonts/Montserrat-Regular.ttf") format("truetype");
+body {
+  background-color: #031B28;
 }
-@font-face {
-  font-family: "Montserrat-SemiBold";
-  src: url("../Content/Fonts/Montserrat-SemiBold.ttf") format("truetype");
+
+a {
+  font-family: Georgia;
+  color: #DBA858;
+  text-decoration: none;
+}
+a.btn {
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding: 0 30px;
+  border-bottom: 1px solid #DBA858;
+  width: 100%;
+  height: 60px;
+}
+.navigation .right-side a {
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+}
+.navigation .right-side a:hover {
+  text-decoration: none;
+}
+
+.cookies {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  min-width: 350px;
+  height: auto;
+}
+.cookies .image-and-title {
+  display: flex;
+  align-items: center;
+}
+.cookies .image-and-title img {
+  margin-right: 20px;
+}
+.cookies .choice a:first-child {
+  margin-right: 20px;
+}
+
+@media (min-width: 992px) {
+  .HeroBanner {
+    padding-top: 60px;
+  }
 }
 
 /*# sourceMappingURL=Master.css.map */
