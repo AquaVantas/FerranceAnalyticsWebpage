@@ -7,6 +7,7 @@
 		<?php
 		include "Views/Master/navigation.php";
 		include "Views/Sections/SectionBlock/HeroBanner.php";
+		include "Views/Sections/SectionBlock/CallToAction.php";
 		?>
 		
 			

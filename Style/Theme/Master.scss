@@ -2,16 +2,38 @@
 
 body {
     background-color: $primary-main;
-}
 
-a {
-    font-family: Georgia;
-    color: $secondary-main;
-    text-decoration: none;
-    
-    &.btn {
-        padding: 12px 20px;
-        border-radius: 4px;
+    h1, h2 {
+        color: $secondary-main;
+        font-family: Georgia;
+    }
+
+    p {
+        color: $secondary-light;
+        font-family: Georgia;
+    }    
+
+    a {
+        font-family: Georgia;
+        color: $secondary-main;
+        text-decoration: none;
+        
+        &.btn {
+            padding: 12px 20px;
+            border-radius: 28px;
+            border: none;   
+
+            &.btn-primary {
+                background-color: $secondary-main;
+                color: $primary-main;
+            }
+
+            &.btn-secondary {
+                background-color: transparent;
+                color: $secondary-main;
+                border: 1px solid $secondary-main;
+            }
+        }
     }
 }
 
@@ -24,3 +46,4 @@ a {
 
 //Sections styles
 @import "Page/Partials/SectionBlocks/HeroBanner.scss";
+@import "Page/Partials/SectionBlocks/CallToAction.scss";

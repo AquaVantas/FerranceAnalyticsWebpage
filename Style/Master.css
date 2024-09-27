@@ -1,15 +1,32 @@
 body {
   background-color: #031B28;
 }
-
-a {
+body h1, body h2 {
+  color: #DBA858;
+  font-family: Georgia;
+}
+body p {
+  color: #ACA08D;
+  font-family: Georgia;
+}
+body a {
   font-family: Georgia;
   color: #DBA858;
   text-decoration: none;
 }
-a.btn {
+body a.btn {
   padding: 12px 20px;
-  border-radius: 4px;
+  border-radius: 28px;
+  border: none;
+}
+body a.btn.btn-primary {
+  background-color: #DBA858;
+  color: #031B28;
+}
+body a.btn.btn-secondary {
+  background-color: transparent;
+  color: #DBA858;
+  border: 1px solid #DBA858;
 }
 
 .navigation {
@@ -35,25 +52,51 @@ a.btn {
 
 .cookies {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 0;
+  background-color: #16303F;
   min-width: 350px;
+  max-width: 450px;
+  padding: 40px 30px;
+  border-radius: 4px;
+  border: 1px solid #DBA858;
   height: auto;
+}
+@media (min-width: 992px) {
+  .cookies {
+    bottom: 20px;
+    right: 20px;
+  }
 }
 .cookies .image-and-title {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
-.cookies .image-and-title img {
+.cookies .image-and-title .image-wrapper {
+  max-width: 65px;
+  padding: 8px;
+  border-radius: 50px;
+  background-color: #DBA858;
   margin-right: 20px;
+}
+.cookies .image-and-title .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  filter: invert(12%) sepia(6%) saturate(6905%) hue-rotate(161deg) brightness(96%) contrast(86%);
+}
+.cookies .image-and-title h2 {
+  margin-bottom: 0;
 }
 .cookies .choice a:first-child {
-  margin-right: 20px;
+  margin-right: 12px;
 }
 
+.HeroBanner {
+  padding-top: 80px;
+}
 @media (min-width: 992px) {
   .HeroBanner {
-    padding-top: 60px;
+    padding-top: 100px;
   }
 }
 
