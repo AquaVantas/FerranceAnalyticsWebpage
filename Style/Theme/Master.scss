@@ -3,14 +3,21 @@
 body {
     background-color: $primary-main;
 
-    h1, h2 {
+    h1, h2, h3 {
         color: $secondary-main;
         font-family: Georgia;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 16px;
     }
 
     p {
         color: $secondary-light;
         font-family: Georgia;
+        font-size: 14px;
     }    
 
     a {
@@ -35,6 +42,14 @@ body {
             }
         }
     }
+    
+    ul {
+        li {
+            color: $secondary-main;
+            font-size: 14px;
+            font-family: Georgia;
+        }
+    }
 }
 
 
@@ -47,3 +62,4 @@ body {
 //Sections styles
 @import "Page/Partials/SectionBlocks/HeroBanner.scss";
 @import "Page/Partials/SectionBlocks/CallToAction.scss";
+@import "Page/Partials/SectionBlocks/Services.scss";
