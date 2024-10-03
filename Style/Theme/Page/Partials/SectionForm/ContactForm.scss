@@ -1,0 +1,62 @@
+.ContactForm {
+    padding-top: 80px;
+    padding-bottom: 120px;
+
+    .content-wrapper {
+        width: 100%;
+        //background-color: $primary-light;
+        border-radius: 4px;
+
+        form {
+            label {
+                color: white;
+            }
+
+            .top-line {
+                display: flex;
+                justify-content: space-between;                
+
+                input {
+                    width: calc(calc(100% / 3) - 16px);
+                    padding: 12px 20px;
+                    border: 1px solid $secondary-main;
+                    border-radius: 8px;
+                    background-color: $primary-light;
+                    color: $white;
+                }
+            }
+
+            .bottom-line {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                padding-top: 30px;
+
+                textarea {
+                    width: 100%;
+                    min-height: 100px;
+                    height: auto;
+                    border: 1px solid $secondary-main;
+                    border-radius: 8px;
+                    background-color: $primary-light;
+                    color: $white;
+                    resize: none;
+                }
+
+                input {
+                    &.btn {
+                        margin-top: 30px;
+                        padding: 12px 20px;
+                        border-radius: 28px;
+                        border: none;   
+            
+                        &.btn-primary {
+                            background-color: $secondary-main;
+                            color: $primary-main;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -50,6 +50,18 @@ body {
             font-family: Georgia;
         }
     }
+
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
 }
 
 
@@ -62,4 +74,7 @@ body {
 //Sections styles
 @import "Page/Partials/SectionBlocks/HeroBanner.scss";
 @import "Page/Partials/SectionBlocks/CallToAction.scss";
+@import "Page/Partials/SectionBlocks/Reviews.scss";
 @import "Page/Partials/SectionBlocks/Services.scss";
+@import "Page/Partials/SectionBlocks/Statistics.scss";
+@import "Page/Partials/SectionForm/ContactForm.scss";

@@ -1,0 +1,38 @@
+.Statistics {
+    padding-top: 80px;
+
+    .col-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-12 {
+        .line {
+            width: 100%;
+            height: 1px;
+            background-color: $secondary-main;
+        }
+
+        &:first-child {
+            .line {
+                margin-bottom: 20px;
+            }
+        }
+
+        &:last-child {
+            .line {
+                margin-top: 20px;
+            }
+        }
+    }
+    
+
+    h2 {
+        &.outlined {
+            white-space: nowrap;
+            font-size: 60px;
+            line-height: 72px;
+        }        
+    }
+}

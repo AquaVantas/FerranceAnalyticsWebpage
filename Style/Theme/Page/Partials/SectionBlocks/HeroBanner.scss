@@ -1,7 +1,135 @@
 .HeroBanner {
+    min-height: 600px;
     padding-top: 80px;
     
     @include media-breakpoint-up(lg) {
         padding-top: 100px;
+        display: flex;
+        align-items: center;
     }
+
+    .container {
+        height: 100%;
+
+        .row {
+            height: 100%;
+            align-items: center;
+
+            .col-12 {
+                height: 100%;
+                
+                .graph-example {
+                    min-height: 460px;
+                    position: relative;
+
+                    h2 {
+                        margin-left: 30px;
+                        margin-bottom: 20px;
+                    }
+            
+                    .inner-wrapper {
+                        width: calc(100% - 30px);
+                        height: calc(100% - 80px);
+                        position: absolute;
+                        top: 60px;
+                        right: 0;
+                        border-left: 1px solid $secondary-main;
+                        border-bottom: 1px solid $secondary-main;
+
+                        .inner-content {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+
+                            .horizontal-lines {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+
+                                .line {
+                                    width: 100%;
+                                    height: 1px;
+                                    background-color: $secondary-main;
+
+                                    &:first-child, &:last-child {
+                                        background-color: transparent;
+                                    }
+                                }
+                            }
+
+                            .horizontal-towers {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-around;
+                                position: absolute;
+                                width: 100%;
+                                height: 30px;
+                                bottom: -40px;
+
+                                span {
+                                    font-size: 12px;
+                                    color: $secondary-light;
+                                    max-width: 100px;
+                                    text-align: center;
+                                }
+                            }
+
+                            .vertical-lines {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                position: absolute;
+                                align-items: flex-end;
+                                left: -40px;
+                                width: 30px;
+                                height: 100%;
+
+                                span {
+                                    font-size: 12px;
+                                    width: fit-content;
+                                    color: $secondary-light;
+                                }
+                            }
+
+                            .vertical-towers {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-around;
+                                align-items: flex-end;
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+
+                                .tower {
+                                    height: calc(15%);
+                                    width: 50px;
+
+                                    &:first-child {
+                                        background-color: $pastel-green;
+                                        height: calc(100% - 30px);
+                                    }
+
+                                    &:nth-child(2) {
+                                        background-color: $pastel-blue;
+                                    }
+
+                                    &:nth-child(3) {
+                                        background-color: $pastel-pink;
+                                    }
+
+                                    &:nth-child(4) {
+                                        background-color: $pastel-purple;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }    
 }

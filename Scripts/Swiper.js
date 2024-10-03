@@ -1,14 +1,9 @@
-console.log("samo povem");
-
-var swiper = new Swiper('.highlight-news-swiper', {
-    observer: true,
-    observeParents: true,
+var swiper = new Swiper('.reviews-swiper', {
+    slidesPerView: 3,
+    spaceBetween: 24,
     loop: true,
     autoplay: {
-        delay: 10000,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+        delay: 5000,
+        disableOnInteraction: false,
+    }
 });
