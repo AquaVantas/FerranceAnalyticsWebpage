@@ -1,5 +1,5 @@
 <meta charset="UTF-8">
-<meta name="description" content="TODO">
+<meta name="description" content="Ferrance Analytics helpt u om uw data om te zetten in hapklare inzichten, zodat u zich kunt richten op wat echt belangrijk is: Het bedrijf runnen.">
 <meta name="keywords" content="TODO">
 <meta name="author" content="Aleksandra Bjelovuk">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
