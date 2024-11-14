@@ -2,16 +2,17 @@
     padding-top: 80px;
     
     .swiper {
-        height: 100%;
-
+        
         .swiper-wrapper {
+            display: flex;
             height: 100%;
 
             .swiper-slide {
-                height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                flex-grow: 1; // Ensure each slide grows to the full height of the container
+                min-height: 100%;
                 width: auto;
                 padding: 20px;
                 background-color: $primary-light;
@@ -43,25 +44,7 @@
                                 padding-right: 2px;
         
                                 &.checked {
-                                    &:first-child {
-                                        color: $secondary-main;
-                                    }
-
-                                    &:nth-child(2) {                                        
-                                        color: $pastel-green;
-                                    }
-
-                                    &:nth-child(3) {                                        
-                                        color: $pastel-blue;
-                                    }
-
-                                    &:nth-child(4) {                                        
-                                        color: $pastel-pink;
-                                    }
-
-                                    &:nth-child(5) {                                        
-                                        color: $pastel-purple;
-                                    }
+                                    color: $secondary-main;
                                 }
                             }
                         }
@@ -94,6 +77,59 @@
                     .right-side {
                         img {
                             filter: invert(67%) sepia(73%) saturate(332%) hue-rotate(355deg) brightness(92%) contrast(85%);
+                        }
+                    }
+                }
+            }
+        }
+
+        .pagination-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 36px;
+
+            .reviews-pagination {
+                width: calc(100vw / 375 * 300);
+                margin-bottom: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+
+                @include media-breakpoint-up(lg) {                    
+                    width: calc(100vw / 375 * 150);
+                }
+
+                .pag-bullets {
+                    width: 100%;
+                    display: flex;
+                }
+
+                span {
+                    color: $secondary-main;
+                    width: 100%;
+
+                    &.numbers {
+                        width: fit-content;
+
+                        &:first-child {
+                            margin-right: 19px;
+                        }
+
+                        &:last-child {
+                            margin-left: 19px;
+                        }
+                    }
+
+                    &.custom-pag {
+                        margin-bottom: 2px;
+                        background-color: $primary-light;
+                        height: 2px;
+                        width: 100% !important;
+
+                        &.active {
+                            background-color: $secondary-main;
+                            width: 100% !important;
                         }
                     }
                 }

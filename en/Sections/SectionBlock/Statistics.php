@@ -6,19 +6,19 @@
             </div>
             <div class="col-6 col-lg-3">
                 <h2 class="outlined" id="years">0</h2>
-                <p>Tevreden klanten</p>
+                <p>Happy customers</p>
             </div>
             <div class="col-6 col-lg-3">
                 <h2 class="outlined" id="certificates">0</h2>
-                <p>Dashboards ontwikkeld</p>
+                <p>Dashboards made</p>
             </div>
             <div class="col-6 col-lg-3">
                 <h2 class="outlined" id="employee">0</h2>
-                <p>Klanttevredenheid</p>
+                <p>Customer satisfaction</p>
             </div>
             <div class="col-6 col-lg-3">
                 <h2 class="outlined" id="penguins">0</h2>
-                <p>Koppen koffie geconsumeerd</p>
+                <p>Cups of coffee consumed</p>
             </div>
             <div class="col-12">
                 <div class="line"></div>

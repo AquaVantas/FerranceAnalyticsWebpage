@@ -1,10 +1,14 @@
 .ContactForm {
-    padding-top: 80px;
-    padding-bottom: 120px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @include media-breakpoint-up(lg) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
 
     .content-wrapper {
         width: 100%;
-        //background-color: $primary-light;
         border-radius: 4px;
 
         form {
@@ -14,15 +18,26 @@
 
             .top-line {
                 display: flex;
-                justify-content: space-between;                
+                flex-direction: column;
+                justify-content: space-between;         
+                
+                @include media-breakpoint-up(lg) {
+                    flex-direction: row;
+                }
 
                 input {
-                    width: calc(calc(100% / 3) - 16px);
+                    width: 100%;
                     padding: 12px 20px;
                     border: 1px solid $secondary-main;
                     border-radius: 8px;
                     background-color: $primary-light;
                     color: $white;
+                    margin-top: 10px;
+
+                    @include media-breakpoint-up(lg) {                        
+                        width: calc(calc(100% / 3) - 16px);
+                        margin-top: 0;
+                    }
                 }
             }
 
@@ -38,6 +53,7 @@
                     height: auto;
                     border: 1px solid $secondary-main;
                     border-radius: 8px;
+                    padding: 12px 20px;
                     background-color: $primary-light;
                     color: $white;
                     resize: none;

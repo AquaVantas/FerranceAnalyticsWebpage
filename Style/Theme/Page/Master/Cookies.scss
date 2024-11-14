@@ -1,5 +1,4 @@
 .cookies {
-    display: none;
     position: fixed;   
     bottom: 0;
     background-color: $primary-light;
@@ -9,6 +8,7 @@
     border-radius: 4px;
     border: 1px solid $secondary-main;
     height: auto;
+    z-index: 2000;
 
     @include media-breakpoint-up(lg) {        
         bottom: 20px;
@@ -38,10 +38,6 @@
             margin-bottom: 0;
         }
         
-    }
-
-    p {
-
     }
 
     .choice {

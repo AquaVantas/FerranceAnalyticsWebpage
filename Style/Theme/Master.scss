@@ -29,6 +29,7 @@ body {
             padding: 12px 20px;
             border-radius: 28px;
             border: none;   
+            font-family: Georgia;
 
             &.btn-primary {
                 background-color: $secondary-main;
@@ -40,6 +41,10 @@ body {
                 color: $secondary-main;
                 border: 1px solid $secondary-main;
             }
+        }
+
+        &:hover {
+            color: $secondary-light;
         }
     }
     

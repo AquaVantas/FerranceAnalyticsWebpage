@@ -1,10 +1,26 @@
 .Services {
-    padding-top: 80px;
+    padding-top: 40px;
 
-    .content-wrapper {
-        height: 100%;
-        background-color: $primary-light;
-        border-radius: 4px;
-        padding: 30px 24px;
+    @include media-breakpoint-up(lg) {        
+        padding-top: 80px;
+    }
+
+    .col-12 {
+        margin-bottom: 20px;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 0;
+        }
+
+        &:first-child {
+            margin-bottom: 0;
+        }
+
+        .content-wrapper {
+            height: 100%;
+            background-color: $primary-light;
+            border-radius: 4px;
+            padding: 30px 24px;
+        }
     }
 }

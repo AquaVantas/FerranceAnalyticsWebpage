@@ -1,38 +1,38 @@
-<section class="Services">
+<section class="Services" id="services">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2>What can we do for you?</h2>
+                <h2>Wat kunnen wij voor u betekenen?</h2>
             </div>
             <div class="col-12 col-lg-4">
                 <div class="content-wrapper">
-                    <h3>Tailored data consulting</h3>
-                    <p>You wish to be more data-driven, but don’t know where to start?  With a data consultation tailored to your specific business needs, we enable you in getting your organisation to the next level in data. After the consultation you will have:</p>
+                    <h3>Dataconsult op maat</h3>
+                    <p>Wilt u datagedreven werken, maar weet u niet waar u moet beginnen? Met een dataconsult op maat zetten we uw organisatie in hun kracht en maken wij datagedreven werken haalbaar. Na dit consult heeft u:</p>
                     <ul aria-label="Detailed list of services included in tailored data consulting">
-                        <li>A detailed overview of current reports and data quality</li>
-                        <li>A step-by-step plan to improve the report and data quality</li>
+                        <li>Een gedetailleerd overzicht van de huidige rapportages en hun datakwaliteit</li>
+                        <li>Een duidelijk plan van aanpak om de huidige rapportages en hun datakwaliteit te verbeteren.</li>
                     </ul>
                 </div>
             </div>
             <div class="col-12 col-lg-4">
                 <div class="content-wrapper">
-                    <h3>Databasing & APIs</h3>
-                    <p>Downloading reports manually and bloated SharePoint servers are a reality for most businesses. But what if it could be different? Setting up a database and utilising API calls is a clean and automated solution, that saves you time and energy. After setup you will have:</p>
+                    <h3>Databases & APIs</h3>
+                    <p>Het handmatig downloaden van rapportages en stampvolle SharePoint servers zijn heel gewoon voor de meeste bedrijven. Maar wat als dat nou anders kon? Met het opzetten van een database en het inzetten van API's kunt u middels automatisering zowel tijd als energie besparen. Na opzetten heeft u:</p>
                     <ul aria-label="Detailed list of services included in databasing and APIs">
-                        <li>One central point for all your data, improving ease-of-use</li>
-                        <li>Drastic reduction in manual data extraction</li>
-                        <li>Excellent base for dashboarding and data analytics</li>
+                        <li>Één centraal punt voor al uw data opslag, wat het gebruiksgemak bevordert</li>
+                        <li>Drastische vermindering van handmatige downloads en handelingen</li>
+                        <li>Uitstekende basis voor dashboards en data-analyse, met geavanceerde inzichten</li>
                     </ul>
                 </div>
             </div>
             <div class="col-12 col-lg-4">
                 <div class="content-wrapper">
                     <h3>Dashboards & BI</h3>
-                    <p>Are you tired of having to sift through countless Excel sheets to understand what’s really going on with your business? We got you covered. With dashboards and BI tooling, you can have these insights at your fingertips in seconds. After setup you will have:</p>
+                    <p>Hebt u genoeg van door talloze Excel bestanden struinen om te begrijpen hoe het nou écht met uw bedrijf staat? Dan bent u bij ons aan het juiste adres. Met dashboards en BI tooling weet u dit in een mum van tijd. Na opzetten heeft u:</p>
                     <ul aria-label="Detailed list of services included in Dashboards and BI">
-                        <li>Dashboards that are both aesthetic and easy to understand</li>
-                        <li>Central hub for all your data insights</li>
-                        <li>Self-service environment in Excel for in-depth data analysis</li>
+                        <li>Dashboards die zowel gebruiksvriendelijk als mooi ontworpen zijn</li>
+                        <li>Één centraal punt voor al uw data inzichten</li>
+                        <li>Self-service omgeving in Excel voor diepgaandere analyses</li>
                     </ul>
                 </div>
             </div>

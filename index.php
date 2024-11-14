@@ -21,9 +21,9 @@
 			?>
 		</main>
 		<footer>
-			<?php
-			include "Views/Master/bootomer.php";		
+			<?php	
 			include "Views/Master/footer.php";
+			include "Views/Master/bootomer.php";	
 			?>
 		</footer>
 	</body>

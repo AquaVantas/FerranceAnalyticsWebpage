@@ -3,13 +3,41 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    padding: 0 0 0 12px;
     top: 0;
-    padding: 0 30px;
     border-bottom: 1px solid $secondary-main;
     background-color: $primary-main;
     width: 100%;
     height: 60px;
     z-index: 2000;
+
+    @include media-breakpoint-up(lg) {        
+        padding: 0 0 0 30px;
+    }
+
+    .left-side {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        a {
+            height: calc(100% - 10px);
+
+            img {
+                height: 100%;
+            }
+        }
+
+        h3 {
+            margin-bottom: 0;
+            margin-left: 10px;
+            font-size: 20px;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 24px;
+            }
+        }
+    }
 
     .right-side {
         a {
@@ -17,9 +45,23 @@
             font-size: 14px;
             line-height: 24px;
             text-decoration: none;
+            display: none;
+
+            @include media-breakpoint-up(lg) {
+                display: inline;
+            }
 
             &:hover {
                 text-decoration: none;
+            }
+
+            &.special {
+                display: inline;
+                font-size: 20px;
+                background-color: $secondary-main;
+                color: $primary-main;
+                height: 100%;
+                padding: 19px 30px;
             }
         }
     }
